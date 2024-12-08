@@ -21,9 +21,9 @@ const Product = () => {
             <Image
               src={car.image}
               alt={car.title}
-              width={500} // Adjust this to your desired width
-              height={300} // Adjust this to your desired height
-              layout="intrinsic" // Ensures the image scales correctly while maintaining aspect ratio
+              width={500} 
+              height={300} 
+              layout="intrinsic" 
               className="w-full h-auto rounded-md mb-4"
             />
 
