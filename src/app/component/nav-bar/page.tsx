@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const NavBar = () => {
   return (
@@ -9,9 +10,11 @@ const NavBar = () => {
         <ul className="grid grid-cols-1 lg:grid-cols-2 items-center">
           {/* Left Section */}
           <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-10">
+            <Link href={`/`}>
             <li className="text-blue-600 text-2xl lg:text-3xl font-semibold">
               MORENT
             </li>
+            </Link>
             {/* Search Bar */}
             <ul className="flex items-center border-2 w-full lg:w-auto rounded-full px-4 py-2 gap-4">
               <li>
@@ -44,6 +47,7 @@ const NavBar = () => {
           <div className="flex justify-center lg:justify-end mt-4 lg:mt-0">
             {/* Icons */}
             <ul className="flex gap-5">
+              <Link href={`/component/payement-page`}>
               <li>
                 <Image
                   src={`/images/like-icon.png`}
@@ -52,6 +56,8 @@ const NavBar = () => {
                   height={35}
                 />
               </li>
+              </Link>
+              <Link href={`/component/car-rent`}>
               <li>
                 <Image
                   src={`/images/Notification-icon.png`}
@@ -60,6 +66,9 @@ const NavBar = () => {
                   height={35}
                 />
               </li>
+              </Link>
+              <Link href={`/component/car-rent`}>
+              
               <li>
                 <Image
                   src={`/images/setting-icon.png`}
@@ -68,6 +77,8 @@ const NavBar = () => {
                   height={35}
                 />
               </li>
+              </Link>
+              <Link href={`/`}>
               <li>
                 <Image
                   src={`/images/Profile-icon.png`}
@@ -76,6 +87,7 @@ const NavBar = () => {
                   height={35}
                 />
               </li>
+              </Link>
             </ul>
           </div>
         </ul>
