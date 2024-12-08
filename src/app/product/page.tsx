@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { popular_post,recomendation_car } from "../data/data";
 import { CiHeart } from "react-icons/ci";
-
+import Link from "next/link";
 const Product = () => {
   return (
     <main className="p-6">
@@ -10,6 +10,7 @@ const Product = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {popular_post.map((car) => (
           <div key={car.id} className="bg-white shadow rounded-lg p-4">
+            <Link href={`/product/${car.id}`}>
             <h2 className="text-lg font-bold flex items-center justify-between">
               {car.title}{" "}
               <span className="hover:bg-red-600 hover:text-white p-2 rounded-full cursor-pointer">
@@ -47,6 +48,7 @@ const Product = () => {
                 Rent Now
               </button>
             </div>
+            </Link>
           </div>
         ))}
       </div>
@@ -56,7 +58,9 @@ const Product = () => {
       <h1 className="text-2xl font-bold mb-6">Recomends Cars</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {recomendation_car.map((car) => (
+        
           <div key={car.id} className="bg-white shadow rounded-lg p-4">
+            <Link href={`/product/${car.id}`}>
             <h2 className="text-lg font-bold flex items-center justify-between">
               {car.title}{" "}
               <span className="hover:bg-red-600 hover:text-white p-2 rounded-full cursor-pointer">
@@ -67,9 +71,9 @@ const Product = () => {
             <Image
               src={car.image}
               alt={car.title}
-              width={500} // Adjust this to your desired width
-              height={300} // Adjust this to your desired height
-              layout="intrinsic" // Ensures the image scales correctly while maintaining aspect ratio
+              width={500} 
+              height={300} 
+              layout="intrinsic" 
               className="w-full h-auto rounded-md mb-4"
             />
 
@@ -94,7 +98,9 @@ const Product = () => {
                 Rent Now
               </button>
             </div>
+            </Link>
           </div>
+
         ))}
       </div>
       <div className="flex justify-center my-16">

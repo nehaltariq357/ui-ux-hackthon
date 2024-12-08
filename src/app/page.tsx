@@ -1,4 +1,5 @@
 import Banner from "./component/banner/page";
+import CarRent from "./component/car-rent/page";
 import CompareDesign from "./component/compare-design/page";
 import NavBar from "./component/nav-bar/page";
 import Product from "./product/page";
@@ -10,7 +11,8 @@ export default function Home() {
     {/* <NavBar/> */}
     {/* <Banner/> */}
     {/* <CompareDesign/> */}
-    <Product/>
+    {/* <Product/> */}
+    <CarRent/>
    </div>
   );
 }
