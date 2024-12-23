@@ -6,7 +6,7 @@ import Link from "next/link";
 const Product = () => {
   return (
     <main className="p-6">
-      <h1 className="text-2xl font-bold mb-6">Popular Cars</h1>
+      <h1 className="text-lg text-slate-400 font-semibold mb-6">Popular Cars</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {popular_post.map((car) => (
           <div key={car.id} className="bg-white shadow rounded-lg p-4">
@@ -55,7 +55,7 @@ const Product = () => {
 
       {/* recomends car */}
 
-      <h1 className="text-2xl font-bold mb-6">Recomends Cars</h1>
+      <h1 className="text-lg text-slate-400 font-semibold mb-6 py-6">Recomendation Car</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {recomendation_car.map((car) => (
         
