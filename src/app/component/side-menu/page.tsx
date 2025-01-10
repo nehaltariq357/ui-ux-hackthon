@@ -12,7 +12,7 @@ const SideMenu = () => {
   };
 
   return (
-    <main className="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6 p-4">
+    <main className="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6 p-4 bg-white text-black">
       {/* Hamburger Button */}
       <button
         className={`fixed top-4 left-4 z-50 md:hidden p-2 bg-blue-600 text-white rounded focus:outline-none flex items-center transition-transform ${
@@ -32,7 +32,7 @@ const SideMenu = () => {
       >
         {/* Type Section */}
         <section className="mb-6">
-          <h2 className="text-lg font-semibold mb-4">Type</h2>
+          <h2 className="text-lg font-semibold mb-4 text-black">Type</h2>
           <div className="space-y-3">
             {[
               { label: "Sport", count: 10 },
@@ -50,7 +50,7 @@ const SideMenu = () => {
                 />
                 <label
                   htmlFor={`type-${item.label}`}
-                  className="ml-2 text-sm font-medium text-gray-800"
+                  className="ml-2 text-sm font-medium text-black"
                 >
                   {item.label} ({item.count})
                 </label>
@@ -60,8 +60,8 @@ const SideMenu = () => {
         </section>
 
         {/* Capacity Section */}
-        <section className="mb-6">
-          <h2 className="text-lg font-semibold mb-4">Capacity</h2>
+        <section className="mb-6 text-black">
+          <h2 className="text-lg font-semibold mb-4 text-black">Capacity</h2>
           <div className="space-y-3">
             {[
               { label: "2 Person", count: 10 },
@@ -77,7 +77,7 @@ const SideMenu = () => {
                 />
                 <label
                   htmlFor={`capacity-${item.label}`}
-                  className="ml-2 text-sm font-medium text-gray-800"
+                  className="ml-2 text-sm font-medium text-black"
                 >
                   {item.label} ({item.count})
                 </label>
@@ -88,7 +88,7 @@ const SideMenu = () => {
 
         {/* Price Range Section */}
         <section>
-          <h2 className="text-lg font-semibold mb-4">Price</h2>
+          <h2 className="text-lg font-semibold mb-4 text-black">Price</h2>
           <Slider
             value={value}
             onChange={handleChange}
@@ -97,7 +97,7 @@ const SideMenu = () => {
             max={100}
             sx={{ color: "#2563eb" }}
           />
-          <div className="flex justify-between mt-2 text-sm text-gray-700">
+          <div className="flex justify-between mt-2 text-sm text-black">
             <span>Min: ${value[0]}</span>
             <span>Max: ${value[1]}</span>
           </div>

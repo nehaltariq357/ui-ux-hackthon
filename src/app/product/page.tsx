@@ -7,7 +7,7 @@ const Product = () => {
   return (
     <main className="p-6">
       <h1 className="text-lg text-slate-400 font-semibold mb-6">Popular Cars</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-black">
         {popular_post.map((car) => (
           <div key={car.id} className="bg-white shadow rounded-lg p-4">
             <Link href={`/product/${car.id}`}>
@@ -40,7 +40,7 @@ const Product = () => {
                 </span><span className="text-slate-400">day</span>
                 {car.discountedPrice && (
                   <span className="text-sm line-through text-gray-400 ml-2">
-                    {car.discountedPrice}
+                    {/* {car.discountedPrice} */}
                   </span>
                 )}
               </div>
@@ -59,7 +59,7 @@ const Product = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {recomendation_car.map((car) => (
         
-          <div key={car.id} className="bg-white shadow rounded-lg p-4">
+          <div key={car.id} className="bg-white shadow rounded-lg p-4 text-black">
             <Link href={`/product/${car.id}`}>
             <h2 className="text-lg font-bold flex items-center justify-between">
               {car.title}{" "}
@@ -90,7 +90,7 @@ const Product = () => {
                 </span><span className="text-slate-400">day</span>
                 {car.discountedPrice && (
                   <span className="text-sm line-through text-gray-400 ml-2">
-                    {car.discountedPrice}
+                    {/* {car.discountedPrice} */}
                   </span>
                 )}
               </div>

@@ -6,7 +6,7 @@ export default function Home() {
     <div className=" bg-gray-100">
       <Banner />
       <CompareDesign />
-      <Product />
+      <Product/>
     </div>
   );
 }

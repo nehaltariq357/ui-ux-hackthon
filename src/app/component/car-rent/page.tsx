@@ -14,7 +14,7 @@ const CarRent = () => {
   };
 
   return (
-    <main className="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6 p-4">
+    <main className="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6 p-4 bg-white">
       {/* Hamburger Button */}
       <button
         className={`fixed top-4 left-4 z-50 md:hidden p-2 bg-blue-600 text-white rounded shadow focus:outline-none flex items-center transition-transform ${
@@ -33,7 +33,7 @@ const CarRent = () => {
         } md:translate-x-0 fixed md:relative top-0 left-0 h-full md:h-auto z-40`}
       >
         {/* Type Section */}
-        <section className="mb-6">
+        <section className="mb-6 text-black">
           <h2 className="text-lg font-semibold mb-4">Type</h2>
           <div className="space-y-3">
             {[
@@ -62,7 +62,7 @@ const CarRent = () => {
         </section>
 
         {/* Capacity Section */}
-        <section className="mb-6">
+        <section className="mb-6 text-black">
           <h2 className="text-lg font-semibold mb-4">Capacity</h2>
           <div className="space-y-3">
             {[
@@ -89,7 +89,7 @@ const CarRent = () => {
         </section>
 
         {/* Price Range Section */}
-        <section>
+        <section className="mb-6 text-black">
           <h2 className="text-lg font-semibold mb-4">Price</h2>
           <Slider
             value={value}

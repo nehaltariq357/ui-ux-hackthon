@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const NavBar = () => {
   return (
-    <main className="bg-white shadow-sm">
+    <main className="bg-white shadow-sm text-black">
       <div className="px-5 lg:px-10 py-4">
         {/* Logo and Grid */}
         <ul className="grid grid-cols-1 lg:grid-cols-2 items-center">
@@ -67,7 +67,7 @@ const NavBar = () => {
                 />
               </li>
               </Link>
-              <Link href={`/component/car-rent`}>
+              <Link href={`/component/payement-page`}>
               
               <li>
                 <Image
