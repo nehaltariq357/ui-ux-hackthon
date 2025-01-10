@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const PaymentPage = () => {
   return (
-    <main className="bg-gray-50 min-h-screen py-12 px-6 md:px-16">
+    <main className="bg-gray-50 min-h-screen py-12 px-6 md:px-16 text-black">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* Left Section: Form */}
         <section className="col-span-2 bg-white shadow-lg rounded-lg p-8 space-y-8">
