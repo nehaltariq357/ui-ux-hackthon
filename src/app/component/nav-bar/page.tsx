@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <main className="bg-white shadow-sm text-black">
       <div className="px-5 lg:px-10 py-4">
-        {/* Logo and Grid */}
+        {/* Logo and Grid ***/}
         <ul className="grid grid-cols-1 lg:grid-cols-2 items-center">
           {/* Left Section */}
           <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-10">
