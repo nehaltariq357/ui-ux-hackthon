@@ -46,7 +46,7 @@ const ProductDetail = ({ params }: { params: { product_detail: string } }) => {
               </div>
 
               {/* Right: Car Details */}
-              <div className="p-6 space-y-6">
+              <div className="p-6 space-y-6 text-black">
                 <div className="flex justify-between items-center">
                   <h1 className="text-2xl font-bold">{car.title}</h1>
                   <button className="text-red-600 hover:bg-red-100 p-2 rounded-full transition-all duration-200">
@@ -54,7 +54,7 @@ const ProductDetail = ({ params }: { params: { product_detail: string } }) => {
                   </button>
                 </div>
                 <div className="flex items-center space-x-2 text-yellow-500">
-                  ★★★★☆ <span className="text-gray-500">440+ Reviews</span>
+                  ★★★★☆ <span className="text-black">440+ Reviews</span>
                   
                 </div>
                 <p>{car.description}</p>
@@ -91,7 +91,7 @@ const ProductDetail = ({ params }: { params: { product_detail: string } }) => {
           ))}
 
           {/* Reviews Section */}
-          <section className="bg-white p-6 rounded-lg shadow-lg space-y-6">
+          <section className="bg-white p-6 rounded-lg shadow-lg space-y-6 text-black">
             <h2 className="text-xl font-bold">Reviews</h2>
             <div className="space-y-4">
               <div className="flex items-start space-x-4">
@@ -133,10 +133,10 @@ const ProductDetail = ({ params }: { params: { product_detail: string } }) => {
           </section>
 
           {/* Recommended Cars Section */}
-          <section className="space-y-6">
+          <section className="space-y-6 text-black">
             <h2 className="text-xl font-bold">Recommended Cars</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {recomendation_car.map((car) => (
+              {recomendation_car.slice(0,6).map((car) => (
                 <div
                   key={car.id}
                   className="bg-white shadow-lg p-4 rounded-lg text-center"
